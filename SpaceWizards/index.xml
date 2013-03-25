@@ -1,0 +1,447 @@
+<radxml>
+	<meta name = "version" content = "0.1" />
+
+	<script src = "./charclass.js"></script>
+	<script src = "./game.js"></script>
+	<script src = "./networking.js"></script>
+	
+	<!--<script src = "./input.js"></script-->
+
+	<app type = "render">
+		<window name = "winPlayerName" width = "0.25" height = "0.25">
+			<label text = "Enter your name: "></label>
+			<textbox name = "txtPlayerName" position = "0.25,0.25"></textbox>
+			<button name = "cmdPlayerNameSubmit" position = "0.5,0.5" onclick = "startGame ();" text = "Ok"></button>
+		</window>
+		<window name = "winConnect" width = "0.25" height = "0.25" visible = "false">
+			<label text = "Connect to an IP: "></label>
+			<textbox name = "txtIP" position = "0.25,0.25" text = "127.0.0.1"></textbox>
+			<button name = "cmdIPSubmit" position = "0.5,0.5" onclick = "startClient ();" text = "Ok"></button>
+		</window>
+	</app>
+
+	<game>
+		<resourcelocation dir = "./particles/" arch = "FileSystem" type = "spaceshooter_particles" />
+		<resourcelocation dir = "./player/" arch = "FileSystem" type = "spaceshooter_player" />
+
+		<level>
+			
+			<audiolistener name = "alMain" position = "0,0,0" gain = "1.0" maxgain = "1.0">
+			</audiolistener>
+			<sound name = "sndMusic" src = "../../music/music1.ogg" streaming = "true" play = "true">
+			</sound>
+			<sound name = "select" src = "./sound/select.ogg" load = "true" play = "false" >
+			</sound> 
+			<entity name = "background" model = "plane512x512" material = "background" z = "-5" visible = "false"  collides = "false" scale = "1.5,1.5,1.5">
+			</entity>
+			<entity name = "player" model = "plane16x16" material = "player_south" collides = "true" visible = "false" z = "0" scale = "2.0,2.0,2.0">
+				<camera name = "camMain" z = "200" yaw = "0">	
+				</camera>
+					
+			</entity>
+			<entity name = "kiBounding" model = "plane64x64" collides = "false" visible = "false" material = "plasma" oncollision = "plasmaHit">
+			</entity>
+			
+			<entity name = "otherPlayer" model = "plane16x16" material = "player_south" visible = "false" z = "0" scale = "2.0,2.0,2.0">
+			</entity>
+				
+	
+			
+			<entity name = "cursor" model = "plane16x16" material = "cursor" visible = "false" position = "0,0,0"scale = "1.0,1.0,1.0">
+			</entity>
+			
+			<entity name = "backdrop" model = "plane760x380" material = "backdrop" visible = "false" position = "0,0,-2" scale = "0.7,0.7,0.7">
+			</entity>
+			
+			<entity name = "Parky" model = "plane32x32" material = "princess"  visible = "false" scale = "1.0,1.0,1.0" z = "-3" oncollision = "interactionParky">
+			</entity>
+			
+			<entity name = "enemy_Grave" model = "plane32x32" material = "heart_tree"  visible = "false" scale = "1.0,1.0,1.0" z = "-3">
+			</entity>
+			<entity name = "enemy_Ghost" model = "plane32x32" material = "enemy_Ghost"  visible = "false" scale = "1.0,1.0,1.0" z = "-3" oncollision = "damagePlayer">
+			</entity>
+			<entity name = "death" model = "plane32x32" material = "death"  visible = "false" scale = "1.0,1.0,1.0" z = "-3">
+			</entity>
+			
+			
+			<entity name = "enemy_Horror" model = "plane32x32" material = "enemy_Horror"  visible = "false" scale = "1.0,1.0,1.0" z = "-3" oncollision = "damagePlayer">
+			</entity>
+			
+			<entity name = "enemy_Tortured_Soul" model = "plane32x32" material = "enemy_Tortured_Soul"  visible = "false" scale = "1.0,1.0,1.0" z = "-3" oncollision = "damagePlayer">
+			</entity>
+			
+			<entity name = "Demon_Imp" model = "plane64x64" material = "Demon_Imp"  visible = "false" scale = "1.0,1.0,1.0" z = "0" onclick = "selectEnemy ();">
+			</entity>
+			<entity name = "box" model = "plane32x32" material = "grass_1" scale = "1.0,1.0,1.0"  visible = "false">
+			</entity>
+			<entity name = "tree" model = "plane32x32" material = "heart_tree" scale = "1.0,1.0,1.0"  visible = "false" oncollision = "">
+			</entity>
+			
+			<entity name = "block" model = "plane32x32" scale = "1.0,1.0,1.0" z = "0" visible = "false" oncollision = "obstacle2">
+			</entity>
+			
+					
+			<particlesystem name = "cloudLayer" system = "spaceShooter/strato_layer" y =  "0" z = "-1">
+			</particlesystem>
+			
+			<overlay name = "interface_main" overlay = "spacewizards/battlescreen" visible = "false">
+			</overlay>
+			<overlay name = "battleMenu" overlay = "spacewizards/battlemenu" visible = "false">
+			</overlay>
+			<overlayelement name = "Spell1" element = "spacewizards/spell_F" onclick = "spell1 ();">
+			</overlayelement>
+			<overlayelement name = "Spell2" element = "spacewizards/spell_P" onclick = "spell2 ();">
+			</overlayelement>
+			<overlayelement name = "Spell3" element = "spacewizards/spell_I" onclick = "spell3 ();">
+			</overlayelement>
+			<overlayelement name = "txtItem" element = "spacewizards/item" onclick = "itemMenu ();">
+			</overlayelement>
+			<overlay name = "player_HUD" overlay = "spacewizards/player" visible = "false">
+			</overlay>
+			<overlayelement name = "txtHealth" element = "spacewizards/health">
+			</overlayelement>
+			<overlayelement name = "txtMana" element = "spacewizards/mana">
+			</overlayelement>
+			<overlayelement name = "health_bar" element = "spacewizards/healthBar" visible = "true">
+			</overlayelement>
+			<overlayelement name = "txtName" element = "spacewizards/name">
+			</overlayelement>
+			<particlesystem name = "explosion" system = "spaceShooter/blowUp" visible = "false">
+			</particlesystem>
+			<entity name = "bluefire"  visible = "false"  model = "plane64x64" material = "bluefire" collides = "false" z = "1" scale = "0.4,0.4,0.4" oncollision = "fireHit">
+			</entity>
+			<entity name = "fire"  visible = "false"   model = "plane64x64" material = "fire" collides = "false" z = "1" scale = "0.4,0.4,0.4" oncollision = "fireRedHit">
+			</entity>
+			<entity name = "fireRedHit"  visible = "false"  material = "fire" collides = "false" z = "1" scale = "0.4,0.4,0.4" oncollision = "">
+			</entity>
+			<entity name = "fireHit"  visible = "false"  material = "crystalbarrage" collides = "false" z = "1" scale = "0.4,0.4,0.4" oncollision = "fireHit">
+			</entity>
+			<entity name = "elecHit"  visible = "false"  material = "crystalbarrage" collides = "false" z = "1" scale = "0.4,0.4,0.4" oncollision = "elecHit">
+			</entity>
+			<entity name = "ice"  visible = "false"  material = "ice_spike" collides = "false" z = "1" scale = "0.4,0.4,0.4" >
+			</entity>
+			/////ALEX CODE FOR SOUNDS 131 ADDED 3/18 ////////////
+			<sound name = "alarm" src = "./sound/alarm.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "alarm2" src = "./sound/alarm2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "alarm3" src = "./sound/alarm3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser1" src = "./sound/laser1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser2" src = "./sound/laser2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "punch" src = "./sound/punch.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "running" src = "./sound/running.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "smoke_deploy" src = "./sound/smoke_deploy.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "spell_2" src = "./sound/spell_2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "spritz" src = "./sound/spritz.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "beep_1" src = "./sound/beep_1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "boss_charge" src = "./sound/boss_charge.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "boss_spawn_noise" src = "./sound/boss_spawn_noise.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "bubble" src = "./sound/bubble.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "buff" src = "./sound/buff.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin_pickup" src = "./sound/coin_pickup.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "error" src = "./sound/error.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explosion_1" src = "./sound/explosion_1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explosion_long" src = "./sound/explosion_long.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explosion" src = "./sound/explosion.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "fade_in" src = "./sound/fade_in.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump" src = "./sound/jump.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "attack_2" src = "./sound/attack_2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup5" src = "./sound/pickup5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup6" src = "./sound/pickup6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup7" src = "./sound/pickup7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup8" src = "./sound/pickup8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup9" src = "./sound/pickup9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "snare1" src = "./sound/snare.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "spring" src = "./sound/spring.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "tone" src = "./sound/tone.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "tone2" src = "./sound/tone2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "tone3" src = "./sound/tone3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "velcro" src = "./sound/velcro.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "tone2" src = "./sound/tone2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser1" src = "./sound/laser1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser2" src = "./sound/laser2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser3" src = "./sound/laser3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser4" src = "./sound/laser4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser5" src = "./sound/laser5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser6" src = "./sound/laser6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser7" src = "./sound/laser7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser8" src = "./sound/laser8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser9" src = "./sound/laser9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "misc1" src = "./sound/misc1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "noise1" src = "./sound/noise1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup1" src = "./sound/pickup1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup2" src = "./sound/pickup2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup3" src = "./sound/pickup3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "pickup10" src = "./sound/pickup10.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump1" src = "./sound/jump1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump2" src = "./sound/jump2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump3" src = "./sound/jump3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump4" src = "./sound/jump4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump5" src = "./sound/jump5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump6" src = "./sound/jump6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump7" src = "./sound/jump7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump8" src = "./sound/jump8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump9" src = "./sound/jump9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump10" src = "./sound/jump10.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump11" src = "./sound/jump11.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump12" src = "./sound/jump12.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump13" src = "./sound/jump13.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump14" src = "./sound/jump14.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump15" src = "./sound/jump15.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "jump16" src = "./sound/jump16.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser1" src = "./sound/laser1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser2" src = "./sound/laser2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser10" src = "./sound/laser10.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser11" src = "./sound/laser11.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser12" src = "./sound/laser12.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser13" src = "./sound/laser13.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser14" src = "./sound/laser14.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser15" src = "./sound/laser15.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "laser16" src = "./sound/laser16.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode1" src = "./sound/explode1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode2" src = "./sound/explode2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode3" src = "./sound/explode3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode4" src = "./sound/explode4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode5" src = "./sound/explode5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode6" src = "./sound/explode6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode7" src = "./sound/explode7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode8" src = "./sound/explode8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode9" src = "./sound/explode9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode10" src = "./sound/explode10.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode11" src = "./sound/explode11.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode12" src = "./sound/explode12.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode13" src = "./sound/explode13.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode14" src = "./sound/explode14.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode15" src = "./sound/explode15.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "explode16" src = "./sound/explode16.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "glitch1" src = "./sound/glitch1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "glitch1" src = "./sound/glitch1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "horse_gallup" src = "./sound/horse_gallup.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "insect" src = "./sound/insect.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "invasion" src = "./sound/invasion.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death" src = "./sound/death.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death1" src = "./sound/death1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death2" src = "./sound/death2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death3" src = "./sound/death3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death4" src = "./sound/death4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "death5" src = "./sound/death5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "deep" src = "./sound/deep.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "cricket" src = "./sound/cricket.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "cymbal1" src = "./sound/cymbal1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin1" src = "./sound/coin1.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin2" src = "./sound/coin2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin3" src = "./sound/coin3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin4" src = "./sound/coin4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin5" src = "./sound/coin5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin6" src = "./sound/coin6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin7" src = "./sound/coin7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin8" src = "./sound/coin8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin9" src = "./sound/coin9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin10" src = "./sound/coin10.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin11" src = "./sound/coin11.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin12" src = "./sound/coin12.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin13" src = "./sound/coin13.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin14" src = "./sound/coin14.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin15" src = "./sound/coin15.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "coin16" src = "./sound/coin16.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip" src = "./sound/blip.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip2" src = "./sound/blip2.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip3" src = "./sound/blip3.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip4" src = "./sound/blip4.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip5" src = "./sound/blip5.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip6" src = "./sound/blip6.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip7" src = "./sound/blip7.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip8" src = "./sound/blip8.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "blip9" src = "./sound/blip9.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "bounce" src = "./sound/bounce.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "alien" src = "./sound/alien.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "base_note" src = "./sound/base_note.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "boss_spawn" src = "./sound/boss_spawn.ogg" load = "true" play = "false" >
+			</sound>
+			<sound name = "fade_in" src = "./sound/fade_in.ogg" load = "true" play = "false" >
+			</sound>
+
+
+
+
+
+
+
+
+
+
+			
+			<overlay name = "spells_list" overlay = "spacewizards/spellslist" visible = "false">
+			</overlay>
+			<overlayelement name = "txtSpell1" element = "spacewizards/spell1" onclick = "selectTarget(1);">
+			</overlayelement>
+			<overlayelement name = "txtSpell2" element = "spacewizards/spell2" onclick = "selectTarget(2);">
+			</overlayelement>
+			<overlayelement name = "txtSpell3" element = "spacewizards/spell3" onclick = "selectTarget(3);">
+			</overlayelement>
+			<overlayelement name = "txtSpellBack" element = "spacewizards/spellback" onclick = "useSpell(4);">
+			</overlayelement>
+			
+			
+			<overlay name = "atta_Boy" overlay = "spacewizards/attaBoy" visible = "false">
+			</overlay>
+			<overlayelement name = "attaBoy_Text" element = "spacewizards/attaBoyText" onclick = "endAttaBoy();">
+			</overlayelement>
+			
+			<overlay name = "parkyConversation" overlay = "spacewizards/parky" visible = "false">
+			</overlay>
+			<overlayelement name = "parkDialog_intro" element = "spacewizards/parkyDialogIntro">
+			</overlayelement>
+			<overlayelement name = "parkDialog_Question_1" element = "spacewizards/parkyDialogQuestion">
+			</overlayelement>
+			<overlayelement name = "parkDialog_Question_Yes" element = "spacewizards/parkyDialogQuestionYes" onclick = "parkyPotion(true);">
+			</overlayelement>
+			<overlayelement name = "parkDialog_Question_Yes" element = "spacewizards/parkyDialogQuestionNo" onclick = "parkyPotion(false);">
+			</overlayelement>
+		
+			
+			<overlay name = "items_list" overlay = "spacewizards/itemslist" visible = "false">
+			</overlay>
+			<overlayelement name = "txtItem1" element = "spacewizards/item1" onclick = "useItem(1);">
+			</overlayelement>
+			<overlayelement name = "txtItem2" element = "spacewizards/item2" onclick = "useItem(2);">
+			</overlayelement>
+			<overlayelement name = "txtItem3" element = "spacewizards/item3" onclick = "useItem(3);">
+			</overlayelement>
+			<overlayelement name = "txtItemBack" element = "spacewizards/itemback" onclick = "useItem(4);">
+			</overlayelement>
+			
+		</level>
+	</game>
+</radxml>

@@ -1,0 +1,582 @@
+particle_system spaceShooter/GodsVagina
+{
+	quota	1500
+	material	Particles/flame2
+	particle_width	4
+	particle_height	3
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	point
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	0
+		colour	0 0 1 1
+		colour_range_start	0 0 1 1
+		colour_range_end	0 1 1 1
+		direction	0.707107 0 0.707107
+		emission_rate	15
+		position	0 35 -50
+		velocity	1
+		velocity_min	1
+		velocity_max	2
+		time_to_live	1.75
+		time_to_live_min	1.75
+		time_to_live_max	2
+		duration	0
+		duration_min	0
+		duration_max	0
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+	}
+
+	affector Scaler
+	{
+		rate	100
+	}
+
+	affector ColourFader2
+	{
+		red1	0.7
+		green1	0.7
+		blue1	0.7
+		alpha1	0.7
+		red2	-0.9
+		green2	-0.9
+		blue2	-0.9
+		alpha2	-0.7
+		state_change	1
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start	100
+		rotation_speed_range_end	1
+		rotation_range_start	0
+		rotation_range_end	360
+	}
+}
+
+particle_system spaceShooter/strato_layer
+{
+	quota	1000
+	material	Particles/cloud
+	particle_width	250
+	particle_height	250
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	perpendicular_common
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_direction	0 1 0
+	common_up_vector	0 0 1
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Box
+	{
+		angle	0
+		colour	1 1 1 1
+		colour_range_start	1 1 1 1
+		colour_range_end	1 0 0 1
+		direction	0 1 0
+		emission_rate	150
+		position	15 0 -50
+		velocity	0
+		velocity_min	100
+		velocity_max	500
+		time_to_live	5
+		time_to_live_min	5
+		time_to_live_max	6
+		duration	0
+		duration_min	0
+		duration_max	0
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+		width	4200
+		height	0
+		depth	5
+	}
+
+	affector LinearForce
+	{
+		force_vector	0 5 0
+		force_application	add
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start	0
+		rotation_speed_range_end	30
+		rotation_range_start	0
+		rotation_range_end	360
+	}
+
+	affector ColourImage
+	{
+		image	stevecube_dn.jpg
+	}
+
+	affector Scaler
+	{
+		rate	100
+	}
+}
+
+particle_system spaceShooter/strato_layer2
+{
+	quota	1000
+	material	Particles/cloud
+	particle_width	250
+	particle_height	250
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	perpendicular_common
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_direction	0 1 0
+	common_up_vector	0 0 1
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Box
+	{
+		angle	0
+		colour	1 1 1 1
+		colour_range_start	1 1 1 1
+		colour_range_end	1 0 0 1
+		direction	0 1 1
+		emission_rate	150
+		position	15 0 -50
+		velocity	0
+		velocity_min	0
+		velocity_max	500
+		time_to_live	5
+		time_to_live_min	5
+		time_to_live_max	6
+		duration	0
+		duration_min	0
+		duration_max	0
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+		width	4200
+		height	0
+		depth	5
+	}
+
+	affector LinearForce
+	{
+		force_vector	0 0 5
+		force_application	add
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start	0
+		rotation_speed_range_end	30
+		rotation_range_start	0
+		rotation_range_end	360
+	}
+
+	affector ColourImage
+	{
+		image	stevecube_dn.jpg
+	}
+
+	affector Scaler
+	{
+		rate	100
+	}
+}
+
+particle_system lazer
+{
+	quota	1000
+	material	Particles/cap
+	particle_width	10
+	particle_height	40
+	cull_each	true
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	oriented_common
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_direction	0 0 1
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	0
+		colour	0.1 0.1 0.1 1
+		colour_range_start	0.1 0.1 0.1 1
+		colour_range_end	0 1 1 1
+		direction	0 0 1
+		emission_rate	500
+		position	0 0 0
+		velocity	30
+		velocity_min	30
+		velocity_max	30
+		time_to_live	0.4
+		time_to_live_min	0.4
+		time_to_live_max	0.4
+		duration	0
+		duration_min	0
+		duration_max	0
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+	}
+
+	affector ColourFader
+	{
+		red	-0.6
+		green	-0.5
+		blue	-0.5
+		alpha	0
+	}
+}
+
+particle_system spaceShooter/blowUp
+{
+	quota	1000
+	material	Particles/SpinBeam
+	particle_width	3
+	particle_height	25
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	oriented_self
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	180
+		colour	0 0 0 1
+		colour_range_start	0 0 0 1
+		colour_range_end	1 1 1 1
+		direction	0 1 0
+		emission_rate	4500
+		position	0 0 0
+		velocity	75
+		velocity_min	35
+		velocity_max	75
+		time_to_live	.4
+		time_to_live_min	.7
+		time_to_live_max	.7
+		duration	0.03
+		duration_min	0.04
+		duration_max	0.06
+		repeat_delay	0
+		repeat_delay_min	0
+		repeat_delay_max	0
+	}
+
+	affector LinearForce
+	{
+		force_vector	0 10 0
+		force_application	add
+	}
+
+	affector ColourImage
+	{
+		image	stevecube_dn.jpg
+	}
+
+	affector ColourFader2
+	{
+		red1	0.7
+		green1	0.7
+		blue1	0.7
+		alpha1	7
+		red2	-0.7
+		green2	-0.57
+		blue2	-0.7
+		alpha2	-0.7
+		state_change	5
+	}
+}
+
+particle_system fire_blaster
+{
+	quota	1500
+	material	Particles/explosion2
+	particle_width	17
+	particle_height	17
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	point
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	0
+		colour	1 0 0 1
+		colour_range_start	1 0 0 1
+		colour_range_end	1 1 0 1
+		direction	0 0 1
+		emission_rate	1150
+		position	0 0 0
+		velocity	1
+		velocity_min	0
+		velocity_max	32
+		time_to_live	0.1
+		time_to_live_min	0.1
+		time_to_live_max	0.3
+		duration	0
+		duration_min	0.1
+		duration_max	0.1
+		repeat_delay	0.01
+		repeat_delay_min	0.001
+		repeat_delay_max	0.001
+	}
+
+	affector Scaler
+	{
+		rate	-5
+	}
+
+	affector ColourFader2
+	{
+		red1	0.3
+		green1	0.3
+		blue1	0.3
+		alpha1	0.3
+		red2	-0.33
+		green2	-0.3
+		blue2	-0.3
+		alpha2	-0.3
+		state_change	3
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start	0
+		rotation_speed_range_end	0
+		rotation_range_start	0
+		rotation_range_end	360
+	}
+}
+
+particle_system spark_blaster
+{
+	quota	1500
+	material	Particles/cap
+	particle_width	17
+	particle_height	30
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	point
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	180
+		colour	0 0 0 1
+		colour_range_start	0 0 0 1
+		colour_range_end	1 1 1 1
+		direction	0 0 1
+		emission_rate	155500
+		position	0 0 0
+		velocity	1
+		velocity_min	1
+		velocity_max	3
+		time_to_live	0.1
+		time_to_live_min	0.011
+		time_to_live_max	0.01
+		duration	0
+		duration_min	0.2
+		duration_max	0.5
+		repeat_delay	0.2
+		repeat_delay_min	0.01
+		repeat_delay_max	0.01
+	}
+
+	affector Scaler
+	{
+		rate	-5
+	}
+
+	affector ColourFader2
+	{
+		red1	0.3
+		green1	0.3
+		blue1	0.3
+		alpha1	0.3
+		red2	-0.33
+		green2	-0.3
+		blue2	-0.3
+		alpha2	-0.3
+		state_change	3
+	}
+
+	affector Rotator
+	{
+		rotation_speed_range_start	0
+		rotation_speed_range_end	0
+		rotation_range_start	0
+		rotation_range_end	360
+	}
+}
+
+particle_system warpdrive
+{
+	quota	1000
+	material	Particles/Flare
+	particle_width	15
+	particle_height	1000
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	oriented_self
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Point
+	{
+		angle	116
+		colour	0 0 0 1
+		colour_range_start	0 0 0 1
+		colour_range_end	0.25098 0.501961 0.501961 1
+		direction	0 1 0
+		emission_rate	1500
+		position	0 0 0
+		velocity	1000
+		velocity_min	1000
+		velocity_max	7500
+		time_to_live	0.3
+		time_to_live_min	0.3
+		time_to_live_max	0.4
+		duration	1
+		duration_min	1
+		duration_max	7
+		repeat_delay	0.01
+		repeat_delay_min	0.01
+		repeat_delay_max	0.01
+	}
+
+	affector LinearForce
+	{
+		force_vector	100 10 0
+		force_application	add
+	}
+
+	affector ColourImage
+	{
+		image	stevecube_DN.jpg
+	}
+}
+
+particle_system afterBurn
+{
+	quota	1000
+	material	Particles/ciriuslite
+	particle_width	5
+	particle_height	5
+	cull_each	false
+	renderer	billboard
+	sorted	false
+	local_space	false
+	iteration_interval	0
+	nonvisible_update_timeout	0
+	billboard_type	point
+	billboard_origin	center
+	billboard_rotation_type	texcoord
+	common_up_vector	0 1 0
+	point_rendering	false
+	accurate_facing	false
+
+	emitter Box
+	{
+		angle	24
+		colour	0.501961 0.501961 0.501961 1
+		colour_range_start	0.501961 0.501961 0.501961 1
+		colour_range_end	0.501961 1 1 1
+		direction	0 0 -1
+		emission_rate	750
+		position	0 0 0
+		velocity	175
+		velocity_min	175
+		velocity_max	300
+		time_to_live	0.01
+		time_to_live_min	0.01
+		time_to_live_max	0.02
+		duration	0.1
+		duration_min	0.1
+		duration_max	0.1
+		repeat_delay	0.01
+		repeat_delay_min	0.01
+		repeat_delay_max	0.01
+		width	1
+		height	1
+		depth	1
+	}
+	affector Rotator
+	{
+		rotation_speed_range_start	0
+		rotation_speed_range_end	0
+		rotation_range_start	0
+		rotation_range_end	252
+	}
+
+	affector ColourFader
+	{
+		red	0.07
+		green	0.07
+		blue	0.07
+		alpha	0.07
+	}
+}

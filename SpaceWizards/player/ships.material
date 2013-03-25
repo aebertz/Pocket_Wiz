@@ -1,0 +1,2601 @@
+material space_bk_a
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_a.png
+			}
+		}
+	}
+}
+
+material space_bk_b
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_b.png
+			}
+		}
+	}
+}
+
+material space_bk_c
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_c.png
+			}
+		}
+	}
+}
+
+material space_bk_d
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_d.png
+			}
+		}
+	}
+}
+
+material space_bk_e
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_e.png
+			}
+		}
+	}
+}
+
+material space_bk_f
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_bk_f.png
+			}
+		}
+	}
+}
+
+material space_ft_a
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_ft_a.png
+			}
+		}
+	}
+}
+
+material space_ft_b
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_ft_b.png
+			}
+		}
+	}
+}
+
+material space_ft_c
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_ft_c.png
+			}
+		}
+	}
+}
+
+material space_ft_d
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_ft_d.png
+			}
+		}
+	}
+}
+
+material tile2
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				tile2.png
+			}
+		}
+	}
+}
+
+material bag
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				bag.png
+			}
+		}
+	}
+}
+material space_ft_d
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				space_ft_d.png
+				crystal_barrage_010
+			}
+		}
+	}
+}
+
+material spell_button
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				spell_button.png
+			}
+		}
+	}
+}
+material icon_fire
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				fire_icon.png
+			}
+		}
+	}
+}
+
+material icon_ice
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				icon_ice.png
+			}
+		}
+	}
+}
+
+material icon_plasma
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				icon_plasma.png
+			}
+		}
+	}
+}
+
+material health_bar
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				health.png
+			}
+		}
+	}
+}
+
+material mana_bar
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				mana.png
+			}
+		}
+	}
+}
+material background
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				background.png
+			}
+		}
+	}
+}
+
+material backdrop_Beach
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				backdrop_beach.jpg
+			}
+		}
+	}
+}
+
+material bluefire
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		bluefire.png 6 0.3
+				
+			}
+		}
+	}
+}
+material bluefire_van
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		bluefire_van.png 3 0.3
+				
+			}
+		}
+	}
+}
+
+material plasma
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		plasma.png 3 0.2
+				
+			}
+		}
+	}
+}
+
+material plasma_Orb
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		plasma_Orb.png 5 0.3
+				
+			}
+		}
+	}
+}
+
+material blam
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		blam.png 5 0.3
+				
+			}
+		}
+	}
+}
+
+material icespike
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		ice_spike.png 17 0.8
+				
+			}
+		}
+	}
+}
+material crystalbarrage
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		crystal_barrage.png 7 0.5
+				
+			}
+		}
+	}
+}
+material overlay_bottom
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		overlay_bottom.png 
+				
+			}
+		}
+	}
+}
+material fire
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		fire.png 5 0.4
+				
+			}
+		}
+	}
+}
+
+material ice
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		ice.png 9 1.0
+				
+			}
+		}
+	}
+}
+
+material Demon_Imp
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		Demon_Imp.png 
+				
+			}
+		}
+	}
+}
+material Demon_Imp_Attack
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		Demon_Imp_Attack.png 8 1.0
+				
+			}
+		}
+	}
+}
+
+material space_1
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				moonGrass1.jpg
+			}
+		}
+	}
+}
+
+material space_2
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				moonGrass2.jpg
+			}
+		}
+	}
+}
+
+material grass_1
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				grass1.jpg
+			}
+		}
+	}
+}
+
+material grass_2
+{
+	technique
+	{
+		pass
+		{
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				grass2.jpg
+			}
+		}
+	}
+}
+
+material player_north
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_north_0.png
+			}
+		}
+	}
+}
+
+material player_north_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		player_north.png 2 0.3
+			}
+		}
+	}
+}
+
+material player_north_a
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_north_a.png
+			}
+		}
+	}
+}
+
+material player_south
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_south_1.png
+			}
+		}
+	}
+}
+
+material player_south_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		player_south.png 2 0.3
+			}
+		}
+	}
+}
+
+material player_south_a
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		player_south_c.png 2 0.3
+			}
+		}
+	}
+}
+
+material player_south_aEnd
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_south_a.png
+			}
+		}
+	}
+}
+
+
+material player_east
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_east_0.png
+			}
+		}
+	}
+}
+
+material player_east_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		player_east.png 2 0.3
+			}
+		}
+	}
+}
+
+material player_east_a
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_east_a.png
+			}
+		}
+	}
+}
+
+material player_west
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_west_0.png
+			}
+		}
+	}
+}
+
+material player_west_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		player_west.png 2 0.3
+			}
+		}
+	}
+}
+
+material player_west_a
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				player_west_a.png
+			}
+		}
+	}
+}
+
+material randalf_west
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				randalf_west_0.png
+			}
+		}
+	}
+}
+
+material randalf_west_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		randalf_west.png 2 0.3
+			}
+		}
+	}
+}
+
+material randalf_east
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				randalf_east_0.png
+			}
+		}
+	}
+}
+
+material randalf_east_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		randalf_east.png 2 0.3
+			}
+		}
+	}
+}
+material randalf_north
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				randalf_north_0.png
+			}
+		}
+	}
+}
+
+material randalf_north_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		randalf_north.png 2 0.3
+			}
+		}
+	}
+}
+
+material randalf_south
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				randalf_south_0.png
+			}
+		}
+	}
+}
+
+material randalf_south_anim
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		randalf_south.png 2 0.3
+			}
+		}
+	}
+}
+
+material bolt
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture			bolt_north.png
+			}
+		}
+	}
+}
+
+
+material bomb
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture			bomb.png
+			}
+		}
+	}
+}
+
+material enemy_Shade
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		shade.png 3 1.0
+			}
+		}
+	}
+}
+material heart_tree
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		heart_tree_1.png 
+			}
+		}
+	}
+}
+material princess
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		princess.png 
+			}
+		}
+	}
+}
+
+material princess
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		princess.png 
+			}
+		}
+	}
+}
+
+material death
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		death.png 
+			}
+		}
+	}
+}
+
+
+
+material enemy_parky_west
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		parky_west.png 2 0.3
+			}
+		}
+	}
+}
+
+material enemy_parky_east
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		parky_east.png 2 0.3
+			}
+		}
+	}
+}
+
+material enemy_Grave_1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		graveStone.png 
+			}
+		}
+	}
+}
+material enemy_Grave_2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		graveStone2.png 
+			}
+		}
+	}
+}
+material enemy_Grave_3
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		graveStone3.png 
+			}
+		}
+	}
+}
+
+material grass_Grove_1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		grass_Grove_1.png 
+			}
+		}
+	}
+}
+material grass_Grove_2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		grass_Grove_2.png 
+			}
+		}
+	}
+}
+material grass_Grove_4
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		grass_Grove_4.png 
+			}
+		}
+	}
+}
+material grass_Grove_3
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		grass_Grove_3.png 
+			}
+		}
+	}
+}
+material grass_Grove_4a
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		grass_Grove_4a.png 2 1.5
+			}
+		}
+	}
+}
+material grass_Grove_5
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		grass_Grove_5.png 
+			}
+		}
+	}
+}
+material grass_Grove_6b
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		grass_Grove_6b.png 2 1.5
+			}
+		}
+	}
+}
+
+material enemy_Horror
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		tortured_soul.png 4 0.5
+			}
+		}
+	}
+}
+
+material enemy_Jam
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		jah.png 3 0.5
+			}
+		}
+	}
+}
+
+material enemy_Ghost
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		ghost.png 4 0.5
+			}
+		}
+	}
+}
+
+material enemy_Ghost_Death
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		ghost_death.png 7 2.5
+			}
+		}
+	}
+}
+
+material enemy_Ghost_Attack
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		ghost_attack.png 4 0.4
+			}
+		}
+	}
+}
+
+material enemy_Tortured_Soul
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		tortured_soul.png 4 0.4
+			}
+		}
+	}
+}
+
+material interface_main
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		interface_main.png
+			}
+		}
+	}
+}
+
+
+
+material spell_ui
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		spell_ui.png
+			}
+		}
+	}
+}
+
+material skill_ui
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		skill_ui.png
+			}
+		}
+	}
+}
+
+material item_ui
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		item_ui.png
+			}
+		}
+	}
+}
+
+material run_ui
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		run_ui.png
+			}
+		}
+	}
+}
+
+material backdrop
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		snowMountain.png
+			}
+		}
+	}
+}
+
+material backdrop_beach
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		backdrop_beach.jpg
+			}
+		}
+	}
+}
+
+material backdrop_snow
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		backdrop_snow.jpg
+			}
+		}
+	}
+}
+
+material cursor
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		cursor.png
+			}
+		}
+	}
+}
+material attack_north
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		player_north_a.png
+			}
+		}
+	}
+}
+material attack_east
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		player_east_a.png
+			}
+		}
+	}
+}
+
+material attack_south
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		player_south_a.png
+			}
+		}
+	}
+}
+material attack_west
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		player_west_a.png
+			}
+		}
+	}
+}
+
+material slash
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		slash_.png 9 0.3
+			}
+		}
+	}
+}
+
+material sland_puzzle/units_bmerc_uc_attack_anim_tex
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		bmattck.png 21 1.0
+			}
+		}
+	}
+}
+//// START ALEX CODE 3/18 ////////////////////////////////
+
+material attack_south
+{
+	technique
+	{
+		pass
+		{
+			ambient			1.0 1.0 1.0 1.0
+			diffuse			1.0 1.0 1.0 1.0
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		player_south_a.png
+			}
+		}
+	}
+}
+material zealot_right_1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_right_1.png
+			}
+		}
+	}
+}
+material zealot_right_2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_right_2.png
+			}
+		}
+	}
+}
+material zealot_forward_1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_forward_1.png
+			}
+		}
+	}
+}
+material zealot_forward_2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_right_2.png
+			}
+		}
+	}
+}
+material zealot_left_1
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_left_1.png
+			}
+		}
+	}
+}
+material zealot_left_2
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				zealot_left_2.png
+			}
+		}
+	}
+}
+material brown_box
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				brown_box.png
+			}
+		}
+	}
+}
+material money_bag
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				money_bag.png
+			}
+		}
+	}
+}
+material yellow_box
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				yellow_box.png
+			}
+		}
+	}
+}
+material scroll_blank
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				scroll_blank.png
+			}
+		}
+	}
+}
+material black_stick
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				black_stick.png
+			}
+		}
+	}
+}
+material black_hat
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				black_hat.png
+			}
+		}
+	}
+}
+material gold_ring
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				gold_ring.png
+			}
+		}
+	}
+}
+material bread_useitem
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				bread_useitem.png
+			}
+		}
+	}
+}
+material Boss_Attack_Left
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				Boss_Attack_Left.png
+			}
+		}
+	}
+}
+material Boss_Attack_Right
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				Boss_Attack_Right.png
+			}
+		}
+	}
+}
+material Boss_Right
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				Boss_Right.png
+			}
+		}
+	}
+}
+material Boss_Left
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting		off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture				Boss_Left.png
+			}
+		}
+	}
+}
+material explosion
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		explosion.png 7 0.3
+				
+			}
+		}
+	}
+}
+material Gold_Coin
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		Gold_Coin.png 7 0.3
+				
+			}
+		}
+	}
+}
+material Silver_Coin
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				anim_texture		Silver_Coin.png 8 0.3
+				
+			}
+		}
+	}
+}
+material lowsword_weapon
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		lowsword_weapon.png 
+				
+			}
+		}
+	}
+}
+material mace_weapon
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		mace_weapon.png
+				
+			}
+		}
+	}
+}
+material pink_staff
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		pink_staff.png
+				
+			}
+		}
+	}
+}
+material red_potion
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		red_potion.png
+				
+			}
+		}
+	}
+}
+material soup_useitem
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture		soup_useitem.png
+				
+			}
+		}
+	}
+}
+material staff_weapon
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+			    texture		        staff_weapon.png
+				
+			}
+		}
+	}
+}
+material tome
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture	        	tome_gear.png
+				
+			}
+		}
+	}
+}
+material water_useitem
+{
+	technique
+	{
+		pass
+		{
+			scene_blend		src_alpha one_minus_src_alpha
+			depth_write		off
+			lighting	off
+			//ambient				0.5 0.5 0.5 1.0
+			//diffuse				1.0 1.0 1.0 1.0
+
+			texture_unit
+			{
+				tex_address_mode	clamp
+				texture         	water_useitem.png
+				
+			}
+		}
+	}
+}

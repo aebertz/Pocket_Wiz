@@ -1,0 +1,206 @@
+material Particles/flame2
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture flame2.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Particles/cloud
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture cloud.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Particles/SpinBeam
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture spinbeam.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Particles/Spark
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture spark1.png
+			}
+		}
+	}
+}
+
+material Particles/ringflare2
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture ring_flare2.png
+			}
+		}
+	}
+}
+
+material Particles/Ring
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+			cull_hardware none
+			cull_software none
+
+			texture_unit
+			{
+				texture ring1.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+
+material Particles/cap
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture wha.png
+				tex_address_mode clamp
+			}
+		}
+	}
+} 
+
+material Particles/ciriuslite
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture ciriuslite.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+material Particles/flamestar
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture flamestar.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}
+material Particles/Flare
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			scene_blend add
+			depth_write off
+
+			texture_unit
+			{	
+				tex_address_mode clamp
+				texture flaretrail.png
+			}
+		}
+	}
+}
+
+material Particles/explosion2
+{
+	technique
+	{
+		pass
+		{
+			lighting off
+			depth_write off
+			scene_blend add
+
+			texture_unit
+			{
+				texture explosion2.png
+				tex_address_mode clamp
+			}
+		}
+	}
+}

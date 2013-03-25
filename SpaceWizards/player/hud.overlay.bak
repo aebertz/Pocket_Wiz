@@ -1,0 +1,336 @@
+spacewizards/battlescreen
+{
+	container Panel (spacewizards/score_panel)
+	{
+		top					0.65
+		left				0.1
+		width				0.2
+		height				0.3
+		
+	}
+}
+
+spacewizards/battlemenu
+{
+	container Panel (spacewizards/mainmenu)
+	{
+		top					0.85
+		left				0.0
+		width				1.0
+		height				0.15
+		material			overlay_bottom
+
+		element Panel (spacewizards/spell_F)
+		{
+			top				0.025
+			left			0.1
+			width			0.05
+			height			0.1
+
+			font_name		spuzzle_font_heller
+			char_height		0.03
+			material		icon_fire
+			colour_top		1 1 1
+			colour_bottom	2 3 4
+			
+		}
+		
+		element Panel (spacewizards/spell_P)
+		{
+			top				0.025
+			left			0.17
+			width			0.05
+			height			0.1
+
+			font_name		spuzzle_font_heller
+			char_height		0.03
+			material		icon_plasma
+			colour_top		1 1 1
+			colour_bottom	2 3 4
+			
+		}
+		
+		element Panel (spacewizards/spell_I)
+		{
+			top				0.025
+			left			0.24
+			width			0.05
+			height			0.1
+			material		icon_ice
+			colour_top		1 1 1
+			colour_bottom	2 3 4
+			
+		}
+
+		element Panel (spacewizards/item)
+		{
+			top				0.025
+			left			0.7
+			width			0.05
+			height			0.1
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			material		bag
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/special)
+		{
+			top				0.01
+			left			0.01
+			width			0.1
+			height			0.9
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			material		bag
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element Panel (spacewizards/healthBar)
+		{
+			top				0.05
+			left			0.8
+			width			0.15
+			height			0.03
+			material 		health_bar
+			colour_top		1 1 1
+	
+		}
+		element Panel (spacewizards/manaBar)
+		{
+			top				0.1
+			left			0.8
+			width			0.15
+			height			0.03
+			material 		mana_bar
+			colour_top		1 1 1
+	
+		}
+		
+		element TextArea (spacewizards/run)
+		{
+			top				0.22
+			left			0.01
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Run Away
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+	}
+}
+
+spacewizards/player
+{
+	container Panel (spacewizards/playerHud)
+	{
+		top					0.6
+		left				0.8
+		width				0.2
+		height				0.3
+		
+
+		element TextArea (spacewizards/health)
+		{
+			top				0.3
+			left			0.01
+			width			0.9
+			height			0.06
+			font_name		spuzzle_font_heller
+			char_height		0.035
+			caption			Health: 100
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/mana)
+		{
+			top				0.35
+			left			0.01
+			width			0.9
+			height			0.06
+			font_name		spuzzle_font_heller
+			char_height		0.035
+			caption			Mana: 100
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+
+
+		element TextArea (spacewizards/name)
+		{
+			top				0.26
+			left			0.01
+		
+
+			font_name		spuzzle_font_heller
+			char_height		0.045
+			caption			name
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+	
+	}
+}
+
+spacewizards/spellslist
+{
+	container Panel (spacewizards/spells)
+	{
+		top					0.65
+		left				0.1
+		width				0.2
+		height				0.3
+		
+
+		element TextArea (spacewizards/spell1)
+		{
+			top				0.01
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Spell 1
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			material 		spell_button
+			
+		}
+		
+		element TextArea (spacewizards/spell2)
+		{
+			top				0.08
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Spell 2
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			material 		spell_button
+			
+		}
+		
+		element TextArea (spacewizards/spell3)
+		{
+			top				0.15
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			material 		spell_button
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/spellback)
+		{
+			top				0.22
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Back
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+
+		
+	}
+}
+
+spacewizards/itemslist
+{
+	container Panel (spacewizards/items)
+	{
+		top					0.65
+		left				0.1
+		width				0.2
+		height				0.3
+		
+
+		element TextArea (spacewizards/item1)
+		{
+			top				0.01
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Item 1
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/item2)
+		{
+			top				0.08
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Item 2
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/item3)
+		{
+			top				0.15
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Item 3
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+		
+		element TextArea (spacewizards/itemback)
+		{
+			top				0.22
+			left			0.01
+			width			0.9
+			height			0.06
+
+			font_name		spuzzle_font_heller
+			char_height		0.06
+			caption			Back
+			colour_top		1 1 1
+			colour_bottom	1 1 1
+			
+		}
+
+		
+	}
+}
+
