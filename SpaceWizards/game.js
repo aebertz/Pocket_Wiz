@@ -38,6 +38,9 @@ function charging ()
 	isCharging = true;
 	setTimeout ("charged ();", 500);
 	//charge++;
+	var soundSelect = Game.getMovableByName ("bubble");    //bubble noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 	
 	
 }
@@ -79,6 +82,9 @@ function battleMode ()
 function selectEnemy ()
 {
 	var objEnemy = Game.getMovableByName ("liveEnemy" + enemyID);
+	var soundSelect = Game.getMovableByName ("select");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 	
 }
 
@@ -665,6 +671,10 @@ function fireHit (object1, object2)
 		setTimeout ("killAnim (" + iNumAttack + ");", 200);
 		isEnemyDead (objEnemy);
 		iNumAttack++;
+
+		var soundSelect = Game.getMovableByName ("explode1");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 		
 	}
 }
@@ -685,6 +695,10 @@ function fireRedHit (object1, object2)
 		setTimeout ("killAnim (" + iNumAttack + ");", 200);
 		isEnemyDead (objEnemy);
 		iNumAttack++;
+
+		var soundSelect = Game.getMovableByName ("explode2");    //explide noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 		
 	}
 }
@@ -706,6 +720,10 @@ function plasmaHit (object1, object2)
 		setTimeout ("killAnim (" + iNumAttack + ");", 300);
 		iNumAttack++;
 		isEnemyDead ((bgBadGuyTouchedName));		
+
+		var soundSelect = Game.getMovableByName ("explode3");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 	}
 }
 
@@ -725,6 +743,10 @@ function elecHit (object1, object2)
 		setTimeout ("killAnim (" + iNumAttack + ");", 200);
 		isEnemyDead (objEnemy);
 		iNumAttack++;
+
+		var soundSelect = Game.getMovableByName ("laser3");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 		
 	}
 }
@@ -743,6 +765,10 @@ function bluefire ()
 	setTimeout ("killAnim (" + iNumAttack + ");", 1000);
 	isEnemyDead ((selected_enemy + iEnemyIndex));
 	iNumAttack++;
+
+	var soundSelect = Game.getMovableByName ("misc1");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 }
 
 
@@ -766,6 +792,10 @@ function ice ()
 	objClone.setVisible(true);
 	setTimeout ("killAnim (" + iNumAttack + ");", 1000);
 	iNumAttack++;
+
+	var soundSelect = Game.getMovableByName ("misc2");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 }
 
 
@@ -838,6 +868,10 @@ function potion ()
 		player.health += 30;
 		removeItem ("Potion");
 	}
+
+	var soundSelect = Game.getMovableByName ("spritz");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 }
 
 function hasItem (itemName)
@@ -1675,6 +1709,10 @@ function killBadGuy (iBadGuyID)
 function killBattleEnemy (iBadGuyID)
 {
 	Game.deleteObject ("liveEnemy" + iBadGuyID);
+
+	var soundSelect = Game.getMovableByName ("death");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 }
 
 
@@ -1758,7 +1796,7 @@ function hurtPlayer (iDamage)
 
 		if (player.health <= 0)
 		{
-			logMessage ("Player Dead Yo!");		
+			logMessage ("You Have Died!");		
 		}
 
 		//player.canBeHurt = false;
@@ -1767,6 +1805,10 @@ function hurtPlayer (iDamage)
 }
 function gameOver ()
 {
+
+var soundSelect = Game.getMovableByName ("death3");    //death4 noise AJE
+	soundSelect.play();
+	setTimeout ("stopMusic (\"" + soundSelect.getName () + "\");", 1000);
 
 }
 

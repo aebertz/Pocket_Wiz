@@ -430,7 +430,7 @@
 			<overlayelement name = "parkDialog_Question_Yes" element = "spacewizards/parkyDialogQuestionNo" onclick = "parkyPotion(false);">
 			</overlayelement>
 		
-			
+			  
 			<overlay name = "items_list" overlay = "spacewizards/itemslist" visible = "false">
 			</overlay>
 			<overlayelement name = "txtItem1" element = "spacewizards/item1" onclick = "useItem(1);">
@@ -447,3 +447,4 @@
 </radxml>
 
 <!--learn how to comment properly in XML-->
+<!--comment by alex -->
