@@ -1,4 +1,4 @@
-var netServer = null;
+5var netServer = null;
 var netClient = null;
 
 var strPlayerNetworkInfo = "";
