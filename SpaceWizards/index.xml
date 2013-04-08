@@ -86,6 +86,8 @@
 			
 			<overlay name = "interface_main" overlay = "spacewizards/battlescreen" visible = "false">
 			</overlay>
+			<overlay name = "interface_bag" overlay = "spacewizards/battlescreen" visible = "false">
+			</overlay>
 			<overlay name = "battleMenu" overlay = "spacewizards/battlemenu" visible = "false">
 			</overlay>
 			<overlayelement name = "Spell1" element = "spacewizards/spell_F" onclick = "spell1 ();">
