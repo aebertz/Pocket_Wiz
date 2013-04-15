@@ -2599,25 +2599,3 @@ material water_useitem
 		}
 	}
 }
-
-material splash_screen
-{
-	technique
-	{
-		pass
-		{
-			scene_blend		src_alpha one_minus_src_alpha
-			depth_write		off
-			lighting	off
-			//ambient				0.5 0.5 0.5 1.0
-			//diffuse				1.0 1.0 1.0 1.0
-
-			texture_unit
-			{
-				tex_address_mode	clamp
-				anim_texture		splash.png 9 0.5
-				
-			}
-		}
-	}
-}

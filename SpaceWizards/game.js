@@ -1072,6 +1072,23 @@ function onKeyUp (event)
 			}
 		}
 
+		
+
+		if (event.key == Key.B)   //aje bag functionality
+		{
+		//	var objinterface_bag = Game.getMovableByName("playerInventory")
+		//	objObject.setMaterial("playerInventory"); //player inventory png
+			bags ();      //open bag & visible
+			logMessage ("bags opened");  //bag log
+		}
+
+		//var objInterface_main = Game.getMovableByName ("interface_main");
+
+		//objInterface_main.setVisible(isVisible);
+	//	showMenu (isVisible);
+		
+
+
 		if (event.key == Key.SPACE)
 		{
 			//objObject.setMaterial("player_south_a");
@@ -1109,6 +1126,20 @@ function onKeyUp (event)
 			cycleNearEnemy();
 		}
 	}
+}
+
+function bags(){
+
+		var objinterface_bag = Game.getMovableByName("playerInventory");
+		//objObject.setMaterial("playerInventory"); //player inventory png
+		objinterface_bag.setvisible (true);
+
+		if (objinterface_bag.setvisible(true)
+		{
+			objInterface_bag.setVisible(false);
+		}
+
+
 } 
  
 function cycleNearEnemy()
